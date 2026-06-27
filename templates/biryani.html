@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani Dharbar</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<h1>🍛 Biryani Dharbar</h1>
+
+<img src="{{ url_for('static', filename='images/biryani.jpg') }}" width="500">
+
+<h2>About Shop</h2>
+
+<p>
+Biryani Dharbar is a local restaurant serving delicious
+Chicken Biryani, Egg Biryani, Meals and Family Packs.
+</p>
+
+<h2>Shop Information</h2>
+
+<p>📍 Haranathapuram, Nellore</p>
+
+<p>📞 Owner Contact: XXXXXXXXXX</p>
+
+<p>⭐ Rating: 4.4</p>
+
+<p>⏰ Open: 11 AM - 11 PM</p>
+<h2>📍 Location</h2>
+
+<a href="https://maps.app.goo.gl/EUaX7hzKq9ftstZ3A" target="_blank">
+    <button class="location-btn">View on Google Maps</button>
+</a>
+<h2>📞 Contact</h2>
+
+<p>📱 +91 98765 66666</p>
+
+<a href="tel:+919876566666">
+    <button class="call-btn">📞 Call Now</button>
+</a>
+<h2>Popular Items</h2>
+
+<ul>
+    <li>🍗 Chicken Biryani</li>
+    <li>🥚 Egg Biryani</li>
+    <li>🍛 Meals</li>
+    <li>👨‍👩‍👧‍👦 Family Pack</li>
+</ul>
+
+<h2>Shop Gallery</h2>
+
+<div class="gallery">
+
+    <img src="{{ url_for('static', filename='images/biryani1.jpg') }}">
+
+</div>
+
+</body>
+</html>

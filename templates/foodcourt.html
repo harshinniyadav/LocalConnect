@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Vengamamba Food Court</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<h1>🍽️ Sri Vengamamba Food Court</h1>
+
+<img src="{{ url_for('static', filename='images/foodcourt.jpg') }}" width="500">
+
+<h2>About Shop</h2>
+
+<p>
+Sri Vengamamba Food Court is a popular food destination in
+Haranathapuram, Nellore. The food court is famous for its
+delicious Fried Rice, Noodles and Manchurian. Customers enjoy
+freshly prepared food, quick service and a comfortable dining atmosphere.
+</p>
+
+<h2>Shop Information</h2>
+
+<p>📍 Haranathapuram, Nellore</p>
+
+<p>📞 Owner Contact: XXXXXXXXXX</p>
+
+<p>⭐ Rating: 4.7</p>
+
+<p>⏰ Open: 10 AM - 11 PM</p>
+
+<h2>Speciality</h2>
+
+<p>
+⭐ Famous for Fried Rice, Noodles and Manchurian
+</p>
+<h2>📍 Location</h2>
+
+<a href="https://maps.app.goo.gl/dp3MHixt54mSq6xN7" target="_blank">
+    <button class="location-btn">View on Google Maps</button>
+</a>
+<h2>📞 Contact</h2>
+
+<p>📱 +91 98765 77777</p>
+
+<a href="tel:+919876577777">
+    <button class="call-btn">📞 Call Now</button>
+</a>
+<h2>Popular Items</h2>
+
+<ul>
+    <li>🍚 Fried Rice</li>
+    <li>🍜 Noodles</li>
+    <li>🌶️ Manchurian</li>
+    <li>🥤 Cool Drinks</li>
+    <li>🍟 French Fries</li>
+</ul>
+
+<h2>Food Court Ambience</h2>
+
+
+<div class="gallery">
+
+    <img src="{{ url_for('static', filename='images/foodcourt1.jpg') }}">
+
+    <img src="{{ url_for('static', filename='images/foodcourt2.jpg') }}">
+
+    <img src="{{ url_for('static', filename='images/foodcourt3.jpg') }}">
+
+</div>
+
+</body>
+</html>

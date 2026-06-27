@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICONIC Salon</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1>💇 ICONIC Salon</h1>
+
+<img src="{{ url_for('static', filename='images/salon.jpg') }}" width="500">
+
+<h2>About Salon</h2>
+
+<p>
+ICONIC Salon offers professional hair styling,
+facials, beauty treatments and grooming services.
+</p>
+
+<h2>Salon Information</h2>
+
+<p>📍 Harnathapuram, Nellore</p>
+
+<p>📞 Owner Contact: xxxxxxxxxx</p>
+
+<p>⭐ Rating: 4.8</p>
+
+<p>⏰ Open: 9 AM - 9 PM</p>
+<h2>📍 Location</h2>
+
+<a href="https://maps.app.goo.gl/WyxY7VnqWnUofXhu6" target="_blank">
+    <button class="location-btn">View on Google Maps</button>
+</a>
+<h2>📞 Contact</h2>
+
+<p>📱 +91 98765 33333</p>
+
+<a href="tel:+919876533333">
+    <button class="call-btn">📞 Call Now</button>
+</a>
+<h2>Services</h2>
+
+<ul>
+    <li>💇 Hair Cut</li>
+    <li>🎨 Hair Coloring</li>
+    <li>✨ Facial</li>
+    <li>💅 Nail Art</li>
+    <li>👰 Bridal Makeup</li>
+</ul>
+
+<h2>Salon Ambience</h2>
+
+<div class="gallery">
+    <img src="/static/images/salon1.jpg">
+    <img src="/static/images/salon2.jpg">
+    <img src="/static/images/salon3.jpg">
+    <img src="/static/images/salon4.jpg">
+</div>
+
+</body>
+</html>

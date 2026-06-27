@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalConnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <nav>
+    <h1>LocalConnect</h1>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <button id="theme-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+</nav>
+    <section class="hero">
+      <h2>Discover Nellore's Local Gems </h2>
+
+<p>
+Explore trusted local shops, food courts, salons,
+and small businesses all in one place.
+</p>
+
+        <input type="text" id="searchInput" placeholder="Search shops...">
+
+<button onclick="searchShop()">Search</button>
+    </section>
+
+    <section class="categories">
+        <h2>Shop Categories</h2>
+
+        <div class="category-container">
+            
+          <div class="card" onclick="filterCategory('Fashion')">👗 Fashion</div>
+            <div class="card" onclick="filterCategory('Food')">🍔 Food</div>
+<div class="card" onclick="filterCategory('Grocery')">🛒 Grocery</div>
+<div class="card" onclick="filterCategory('All')">🌸 All Shops</div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Shops</h2>
+
+        <div class="shop-container">
+
+            <!-- Grocery Store -->
+            <div class="shop-card" data-category="Grocery">
+                <img src="{{ url_for('static', filename='images/shop1.jpg') }}">
+                <h3>Sri Lakshmi General Store</h3>
+                <p>🛒 Grocery & Daily Essentials</p>
+        
+                <p>Category: Grocery </p>
+                <p>Items: Vegetables, Fruits, Groceries, Snacks, Cool Drinks</p>
+                <a href="/shop">
+                    <button>View Shop</button>
+                </a>
+            </div>
+
+            <!-- Burger Prime -->
+            <div class="shop-card">
+                <img src="{{ url_for('static', filename='images/burgerprime.jpg') }}">
+                <h3>🍔 Burger Prime</h3>
+                <p>Burgers, Pizza & Momos</p>
+                <p>Category: Food </p>
+                <p>Items: Burger, Pizza, Momos, Fries, Cool Drinks</p>
+                <a href="/burgerprime">
+                    <button>View Shop</button>
+                </a>
+            </div>
+
+            <!-- Salon -->
+            <div class="shop-card" data-category="Fashion">
+                <img src="{{ url_for('static', filename='images/salon.jpg') }}">
+                <h3>💇 ICONIC Salon</h3>
+                <p>Beauty & Grooming Services</p>
+                  <p>Category: Fashion </p>
+                  <p>Items: Hair Cut, Facial, Hair Styling, Beauty Services</p>
+                <a href="/salon">
+                    <button>View Salon</button>
+                </a>
+            </div>
+
+            <!-- Tailor -->
+            <div class="shop-card" data-category="Fashion">
+                <img src="{{ url_for('static', filename='images/tailor.jpg') }}">
+                <h3>👔 Tailor Shop</h3>
+                
+                <p>Custom Stitching & Alterations</p>
+                 <p>Category: Fashion </p>
+                 <p>Items: Stitching, Alterations, Uniforms, Blouse Stitching</p>
+                <a href="/tailor">
+                    <button>View Shop</button>
+                </a>
+            </div>
+
+        
+        <div class="shop-card" data-category="Food">
+    <img src="{{ url_for('static', filename='images/tea.jpg') }}">
+    <h3>☕ Tea Shop</h3>
+    <p>Tea, Coffee & Snacks</p>
+     <p>Category: Food </p>
+     <p>Items: Tea, Coffee, Snacks, Biscuits</p>
+    <a href="/tea">
+        <button>View Shop</button>
+    </a>
+</div>
+<div class="shop-card" data-category="Food">
+    <img src="{{ url_for('static', filename='images/biryani.jpg') }}">
+
+    <h3>🍛 Biryani Dharbar</h3>
+
+    <p>Chicken Biryani & Meals</p>
+     <p>Category: Food </p>
+    <a href="/biryani">
+        <p>Items: Chicken Biryani, Egg Biryani, Meals</p>
+        <button>View Shop</button>
+    </a>
+</div>
+<div class="shop-card" data-category="Food">
+    <img src="{{ url_for('static', filename='images/foodcourt.jpg') }}">
+
+    <h3>🍽️ Sri Vengamamba Food Court</h3>
+
+    <p>🍚 Fried Rice • 🍜 Noodles </p>
+    <p>Category: Food </p>
+    <a href="/foodcourt">
+    <p>Items: Fried Rice, Noodles, Manchurian, French Fries</p>
+        <button>View Shop</button>
+    </a>
+</div>
+        </div>
+
+    </section>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<footer>
+  <div class="footer-content">
+
+<h2>🌸 LocalConnect</h2>
+
+<p>
+Connecting local vendors with the community through a simple and
+accessible digital platform.
+</p>
+
+<hr>
+
+<p>
+Developed with ❤️ by
+<strong>Ch. Naga Venkata Harshini</strong>
+</p>
+
+
+<p>
+© 2026 LocalConnect | All Rights Reserved
+</p>
+
+</div>
+</footer>
+<button onclick="topFunction()" id="topBtn" title="Go to top">⬆</button>
+</body>
+</html>
+
+
+

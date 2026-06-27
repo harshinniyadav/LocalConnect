@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1>☕ Sri Sai Tea & Snacks Point</h1>
+
+<img src="{{ url_for('static', filename='images/tea.jpg') }}" width="500">
+
+<h2>About Shop</h2>
+<p>
+Fresh tea, coffee, snacks and cool drinks available throughout the day.
+A popular local tea point in Haranathapuram.
+</p>
+
+<h2>Shop Information</h2>
+<p>📍 Haranathapuram, Nellore</p>
+<p>📞 Owner Contact: XXXXXXXXXX</p>
+<p>⭐ Rating: 4.6</p>
+<p>⏰ Open: 6 AM - 10 PM</p>
+<h2>📍 Location</h2>
+
+<a href="https://maps.app.goo.gl/2SwXnAp9y6ngh5ZT8" target="_blank">
+    <button class="location-btn">View on Google Maps</button>
+</a>
+<h2>📞 Contact</h2>
+
+<p>📱 +91 98765 55555</p>
+
+<a href="tel:+919876555555">
+    <button class="call-btn">📞 Call Now</button>
+</a>
+<h2>Available Items</h2>
+<ul>
+    <li>☕ Tea</li>
+    <li>☕ Coffee</li>
+    <li>🥛 Milk</li>
+    <li>🍪 Biscuits</li>
+    <li>🥤 Cool Drinks</li>
+</ul>
+
+<h2>Shop Ambience</h2>
+
+<div class="gallery">
+    <img src="{{ url_for('static', filename='images/tea1.jpg') }}">
+    <img src="{{ url_for('static', filename='images/tea2.jpg') }}">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailor Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1>👔 Tailor Shop</h1>
+
+<img src="{{ url_for('static', filename='images/tailor.jpg') }}" width="500">
+
+<h2>About Shop</h2>
+<p>Professional tailoring services for men, women and children.</p>
+
+<h2>Shop Information</h2>
+<p>📍 Haranathapuram, Nellore</p>
+<p>📞 Owner Contact: XXXXXXXXXX</p>
+<p>⏰ Open: 9 AM - 9 PM</p>
+<h2>📍 Location</h2>
+
+<a href="https://maps.app.goo.gl/2SwXnAp9y6ngh5ZT8" target="_blank">
+    <button class="location-btn">View on Google Maps</button>
+</a>
+<h2>📞 Contact</h2>
+
+<p>📱 +91 98765 44444</p>
+
+<a href="tel:+919876544444">
+    <button class="call-btn">📞 Call Now</button>
+</a>
+<h2>Services</h2>
+<ul>
+    <li>👔 Shirt Stitching</li>
+    <li>👗 Dress Stitching</li>
+    <li>✂️ Alterations</li>
+    <li>🧵 Blouse Stitching</li>
+</ul>
+
+<h2>Shop Gallery</h2>
+
+<div class="gallery">
+    <img src="{{ url_for('static', filename='images/tailor1.jpg') }}">
+    <img src="{{ url_for('static', filename='images/tailor2.jpg') }}">
+    <img src="{{ url_for('static', filename='images/tailor3.jpg') }}">
+</div>
+
+</body>
+</html>
